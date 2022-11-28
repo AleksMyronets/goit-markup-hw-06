@@ -13,7 +13,7 @@
     --color-modal-button: #188CE8;
     --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     --color-border-imput: rgba(255, 255, 255, 0.3);
-    --color-modal-comment: color: rgba(117, 117, 117, 0.5);
+    --color-modal-comment: rgba(117, 117, 117, 0.5);
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
