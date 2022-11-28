@@ -215,6 +215,12 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    transition: background 250ms var(--timing-function);
+}
+
+.banner-button:hover{
+    background-color: var(--color-modal-button);
+    box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 .hi-banner-button {
@@ -476,6 +482,10 @@ ul {
     align-items: baseline;
 }
 
+.footer-contact{
+    width: 231px;
+}
+
 .footer-logo {
     display: block;
     margin-bottom: 20px;
@@ -654,7 +664,7 @@ img{
 }
 
 .social-link-footer {
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 .footer-social-link{
@@ -760,26 +770,51 @@ img{
 
 .sing-up-form{
     margin-left: 93px;
-    display: block;
-    
+
+}
+
+.sing-up{
+    display: flex;
 }
 
 .sing-up-title{
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.88;
     text-transform: uppercase;
     color: var(--color-white);
-
+   
 }
 
 .button-sing-up{
+    display: flex;
+    margin-left: 12px;
     width: 200px;
     height: 50px;
     background:var(--color-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+    transition: background 250ms var(--timing-function);
+    
+}
+
+.button-sing-up:hover {
+    background-color: var(--color-modal-button);
+    box-shadow: 0px 4px 4px 0px #00000026;
+    }
+
+.sing-up-icon{
+    margin-left: 10px;
+    align-items: center;
 }
 
 .sing-up-email{
@@ -796,11 +831,15 @@ img{
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: border 250ms var(--timing-function);
 
 }
 
-.modal-field{
-    margin-top: 12px;
+.sing-up-email:hover{
+    border: 1px solid var(--color-blue);
+}
+
+.modal-field {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -825,6 +864,7 @@ img{
 }
 
 .modal-input{
+    margin-top: 4px;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -854,18 +894,31 @@ img{
 
 }
 
+.modal-button-form:focus,
+.modal-button-form:hover {
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms var(--timing-function),
+                box-shadow 250ms var(--timing-function);
+
+}
+
 .modal-decor{
     position: relative;
-    margin-top: 4px;
+}
 
+.modal-decor-comment{
+    margin-bottom: 20px;
 }
 
 .modal-icon{
     position: absolute;
     left: 15px;
-    top: 40%;
+    top: 55%;
     transform: translateY(-50%);
-    fill: var(--color-client-title);
     transition: fill 250ms var(--timing-function);
     
 }
@@ -882,7 +935,7 @@ img{
 
 .modal-comment{
     width: 448px;
-    height: 120px;
+    height: 96px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
@@ -894,10 +947,11 @@ img{
 }
 
 .text-comment{
-    height: 120px;
+    height: 96px;
     padding: 12px 16px;
     resize: none;
     margin-bottom: 0;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-comment::placeholder {
@@ -934,6 +988,10 @@ img{
     box-shadow: var(--button-shadow);
 }
 
+.checkbox-field-box{
+    margin-bottom: 30px;
+}
+
 .checkbox-field {
     display: flex;
     align-items: center;
@@ -941,7 +999,7 @@ img{
 }
 
 .checkbox-label{
-    margin: 8px;
+    margin-left: 7px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
